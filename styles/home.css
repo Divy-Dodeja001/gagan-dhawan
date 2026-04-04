@@ -168,6 +168,7 @@
 .ventures-section,
 .blogs-section {
   padding: 86px 0;
+  background-color: #ebeae4;
 }
 
 .section-space-sm {
@@ -219,6 +220,7 @@
 .milestones-desktop {
   position: relative;
   height: 250vh;
+  background-color: #ebeae4;
 }
 
 .milestones-sticky {
@@ -260,7 +262,7 @@
 }
 
 .milestone-card-desktop.active .milestone-image-wrap {
-  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0 16px 34px rgba(0, 0, 0, 0.12); */
 }
 
 .milestone-image-wrap {
@@ -341,6 +343,7 @@
 
 .milestones-mobile {
   padding: 78px 0 64px;
+  background-color: #ebeae4;
 }
 
 .milestones-mobile-grid {
@@ -350,8 +353,7 @@
 }
 
 .milestones-title.mobile {
-  text-align: left;
-  font-size: 34px;
+  text-align: center;
   margin-bottom: 28px;
 }
 
@@ -591,10 +593,10 @@
 
 .submit-btn-contact {
   width: 100%;
-  background-color: #efefef!important;
-  color: #101010!important;
-  border-radius: 0!important;
-  padding: 12px 18px!important;
+  background-color: #efefef !important;
+  color: #101010 !important;
+  border-radius: 0 !important;
+  padding: 12px 18px !important;
 }
 
 .form-status {
@@ -785,6 +787,10 @@
     font-size: 14px;
   }
 
+  .social-bar {
+    background-color: #efefef;
+  }
+
   .about-image-wrap {
     min-height: auto;
     justify-content: flex-start;
@@ -800,7 +806,13 @@
   }
 
   .milestones-title.mobile {
-    font-size: 32px;
+    font-size: 36px;
+    text-align: center;
+    background: linear-gradient(to right, #000000, #bababa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
   }
 
   .milestone-mobile-content h3 {

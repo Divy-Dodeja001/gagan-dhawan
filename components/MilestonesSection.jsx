@@ -203,6 +203,9 @@ function MobileMilestones() {
 
   return (
     <section className="milestones-mobile d-lg-none" id="milestones">
+      {/* <MotionReveal>
+        <h2 className="milestones-title.mobile">Milestones</h2>
+      </MotionReveal> */}
       <div className="container pe-4 pe-md-0">
         <div className="milestones-mobile-grid">
           <div className="milestones-rail">
