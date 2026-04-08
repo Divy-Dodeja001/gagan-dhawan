@@ -2,9 +2,9 @@ import { MotionReveal } from "./MotionReveal";
 
 export default function About() {
   return (
-    <section className="about-section" id="about">
+    <section className="about-section py-5" id="about">
       <div className="container px-4 px-md-0">
-        <div className="row g-4 align-items-center justify-content-center pt-4 pt-lg-0">
+        <div className="row align-items-center justify-content-center py-lg-4">
           <div className="col-lg-5 m-0">
             <MotionReveal className="about-copy mb-4" variant="left">
               <h2>
@@ -33,7 +33,7 @@ export default function About() {
               delay={0.08}
             >
               <img
-                src="/images/portrait.jpg"
+                src="/images/portrait.webp"
                 alt="Portrait placeholder"
                 className="about-image"
               />

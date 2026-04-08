@@ -12,20 +12,20 @@
 
 .site-header {
   position: sticky;
-  top: 2%;
+  top: 0%;
+  width: 100%;
   z-index: 50;
   background: transparent;
-  backdrop-filter: blur(8px);
-}
-
-.header-shell {
   background: var(--black);
   color: var(--white);
   min-height: 54px;
+}
+
+.header-shell {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 22px;
+  padding: 10px 0px;
 }
 
 .brand {
@@ -42,7 +42,7 @@
 .nav-link-custom,
 .mobile-nav-link {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 14px;
+  font-size: 15px;
   transition: opacity 0.25s ease;
   text-decoration: none;
 }
@@ -82,12 +82,15 @@
 
 .hero-section {
   position: relative;
-  min-height: 720px;
+  min-height: 740px;
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-image: url("/images/heroDesktop.jpg");
-  object-fit: fill;
+  background-image: url("/images/heroDesktop.webp");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.3); /* The dark tint */
+  background-blend-mode: darken;
 }
 
 .hero-content-wrap {
@@ -113,11 +116,12 @@
   line-height: 1.1;
   max-width: 450px;
   margin-bottom: 18px;
+  color: white;
 }
 
 .hero-copy p {
   max-width: 350px;
-  color: var(--muted);
+  color: white;
   margin-bottom: 26px;
 }
 
@@ -136,7 +140,6 @@
 .about-section {
   background: var(--black);
   color: var(--white);
-  padding: 90px 0 0;
 }
 
 .about-copy {
@@ -701,7 +704,7 @@
   }
 
   .about-section {
-    padding-top: 70px;
+    /* padding-top: 70px; */
   }
 
   .about-copy {
@@ -744,7 +747,7 @@
 
   .hero-section {
     min-height: 520px;
-    background-image: url("/images/heroMobile.jpg");
+    background-image: url("/images/heroMobile.webp");
   }
 
   .hero-copy {
@@ -776,7 +779,7 @@
   }
 
   .about-copy {
-    padding-top: 56px;
+    /* padding-top: 56px; */
   }
 
   .about-copy h2 {

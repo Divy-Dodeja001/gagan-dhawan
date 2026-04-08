@@ -87,16 +87,6 @@ Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
 
 Phasellus ultrices nulla quis nibh. Quisque a lectus.`
   },
-  {
-    slug: 'clarity-in-entrepreneurship',
-    title: 'Clarity in Entrepreneurship',
-    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-    image: '/images/blog-4.svg',
-    date: 'March 10, 2026',
-    content: `Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.
-
-Sed arcu. Cras consequat. Praesent dapibus, neque id cursus faucibus.`
-  }
 ];
 
 export const publications = ['/images/logo1.png', '/images/logo2.png', '/images/logo3.png', '/images/logo4.png', '/images/logo5.png'];

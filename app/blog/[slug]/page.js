@@ -25,7 +25,7 @@ export default function BlogDetailPage({ params }) {
     <main className="blog-detail-page">
       <section className="blog-topbar">
         <div className="container d-flex justify-content-between align-items-center gap-3 flex-wrap">
-          <Link href="/" className="blog-back-link">← Back to Home</Link>
+          <Link href="/" className="blog-back-link text-decoration-none" style={{color:"inherit"}}>← Back to Home</Link>
           <span className="blog-brand">Gagan Dhawan</span>
         </div>
       </section>

@@ -1,20 +1,25 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Icon } from '@iconify/react';
-import { AnimatePresence, motion } from 'framer-motion';
-import { navLinks } from '../data/siteData';
+import { useState } from "react";
+import { Icon } from "@iconify/react";
+import { AnimatePresence, motion } from "framer-motion";
+import { navLinks } from "../data/siteData";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
-  const handleNavClick = () => setOpen(false);
-
+  const handleNavClick = () => {
+    setTimeout(() => {
+      setOpen(false);
+    }, 200); // small delay so scroll completes
+  };
   return (
-    <header className="site-header">
+    <header className="site-header py-1">
       <div className="container px-4 px-md-0">
         <div className="header-shell">
-          <a href="#top" className="brand">Gagan Dhawan</a>
+          <a href="#top" className="brand">
+            Gagan Dhawan
+          </a>
 
           <nav className="desktop-nav d-none d-lg-flex">
             {navLinks.map((link) => (
@@ -31,7 +36,11 @@ export default function Header() {
             aria-expanded={open}
             onClick={() => setOpen((prev) => !prev)}
           >
-            <Icon icon={open ? 'mdi:close' : 'mdi:menu'} width="24" height="24" />
+            <Icon
+              icon={open ? "mdi:close" : "mdi:menu"}
+              width="24"
+              height="24"
+            />
           </button>
         </div>
 
@@ -40,7 +49,7 @@ export default function Header() {
             <motion.div
               className="mobile-dropdown open"
               initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
+              animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
             >
